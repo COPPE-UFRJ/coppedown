@@ -1,7 +1,6 @@
 ---
 doc_type: 'msc' # 'msc' or 'dscexam' or 'dsc'
-portuguese: false # choose either portuguese or english to be true
-english: true 
+english: false 
 title:  'My Final College Paper'
 foreigntitle: 'Foreign Title'
 department: 'PESC'

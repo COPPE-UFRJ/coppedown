@@ -21,8 +21,8 @@
 % version 3 along with this package (see COPYING file).
 % If not, see <http://www.gnu.org/licenses/>.
 %
-% $URL: https://svn.code.sf.net/p/coppetex/code/tags/coppetex-2.2.1/coppe-unsrt.bst $
-% $Id: coppe-unsrt.bst 276 2011-02-05 00:14:45Z helano $
+% $URL$
+% $Id$
 %
 % Author(s): Vicente H. F. Batista
 %

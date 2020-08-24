@@ -1,35 +1,32 @@
-\documentclass[$doc_type$,numbers]{coppe}
-\usepackage[utf8]{inputenc}
+$if(english)$
+  \documentclass[english,$doc_type$,numbers]{coppe}
+$else$
+  \documentclass[$doc_type$,numbers]{coppe}
+$endif$
+
 \usepackage{amsmath,amssymb}
 \usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \makelosymbols
 \makeloabbreviations
 
-$language$
-
-$if(portuguese)$
-  \RequirePackage[english, brazil]{babel}
-$endif$
-
-$if(english)$
-  \RequirePackage[brazil,english]{babel}
-$endif$
-
 $if(highlighting-macros)$
 $highlighting-macros$
 $endif$
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\usepackage{longtable}
-\usepackage{booktabs}
 
 \begin{document}
+
   \title{$title$}
   \foreigntitle{$foreigntitle$}
   $for(author)$
   \author{$author.name$}{$author.surname$}
   $endfor$
+
 
   $for(advisor)$
   \advisor{$advisor.title$}{$advisor.name$}{$advisor.surname$}{$advisor.degree$}
@@ -39,7 +36,6 @@ $endif$
   $for(examiner)$
   \examiner{$examiner.title$}{$examiner.name$}{$examiner.degree$}
   $endfor$
-
   \department{$department$}
   \date{$date_month$}{$date_year$}
 
@@ -57,16 +53,15 @@ $endif$
   $thanks.text$
   $endfor$
 
-  \begin{abstract}
+ \begin{abstract}
 $abstract$
-  \end{abstract}
+ \end{abstract}
 
   \begin{foreignabstract}
 $foreignabstract$
   \end{foreignabstract}
 
   \tableofcontents
-
 $if(listoffigures)$
   \listoffigures
 $endif$
@@ -74,7 +69,6 @@ $endif$
 $if(listoftables)$
   \listoftables
 $endif$
-
   \printlosymbols
   \printloabbreviations
 
@@ -83,9 +77,12 @@ $endif$
   $body$
 
   \backmatter
-  \bibliographystyle{coppe-unsrt}
-  \bibliography{thesis}
+  %\bibliographystyle{coppe-unsrt}
+  %\bibliography{example}
 
   %\appendix
-  %\include{appenA}
+  %\chapter{Algumas Demonstra{\c c}\~oes}
 \end{document}
+%% 
+%%
+%% End of file `example.tex'.
