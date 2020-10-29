@@ -8,8 +8,8 @@ date_month: '09'
 date_year: '2020'
 keyword: [Primeira palavra-chave, Segunda palavra-chave]
 author:
-- name: Zé
-  surname: Ninguém
+- name: Nome do Autor
+  surname: Sobrenome
 advisor:
 - title: Prof.
   name: Nome do Primeiro Orientador
