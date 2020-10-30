@@ -8,8 +8,8 @@ date_month: '09'
 date_year: '2020'
 keyword: [Primeira palavra-chave, Segunda palavra-chave]
 author:
-- name: Zé
-  surname: Pretim
+- name: Nome do Autor
+  surname: Sobrenome
 advisor:
 - title: Prof.
   name: Nome do Primeiro Orientador
@@ -47,11 +47,11 @@ bibliography: bib/thesis.bib
 biblio-style: "coppe-unsrt"
 link-citations: true
 output: 
-   thesisdown::thesis_pdf: default
-#  thesisdown::thesis_gitbook: default
-#  thesisdown::thesis_word: 
+   coppedown::thesis_pdf: default
+#  coppedown::thesis_gitbook: default
+#  coppedown::thesis_word: 
 #    reference_docx: template_docx.docx
-#  thesisdown::thesis_epub: default
+#  coppedown::thesis_epub: default
 
 # If you prefer blank lines between paragraphs, un-silence lines  40-41 (this requires package tikz)
 #header-includes:
@@ -77,7 +77,7 @@ If you receive a duplicate label error after knitting, make sure to delete the i
 if(!require(devtools))
   install.packages("devtools", repos = "http://cran.rstudio.com")
 if(!require(coppedown))
-  devtools::install_github("mralbu/coppedown")
+  devtools::install_github("COPPE-UFRJ/coppedown")
 library(coppedown)
 ```
 

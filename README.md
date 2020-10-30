@@ -37,7 +37,7 @@ To use **coppedown** from [RStudio](http://www.rstudio.com/products/rstudio/down
 ```
 if (!require("devtools")) install.packages("devtools", repos = "http://cran.rstudio.org")
 devtools::install_github("rstudio/bookdown")
-devtools::install_github("mralbu/coppedown")
+devtools::install_github("COPPE-UFRJ/coppedown")
 ```
 
 3) Use the **New R Markdown** dialog to select **Thesis**, here are the steps, and a screenshot below:
